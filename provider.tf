@@ -1,7 +1,6 @@
- provider "azurerm" {
+provider "azurerm" {
   features {}
-
-  skip_provider_registration = "true"
+  resource_provider_registrations = "none"
 
   # Connection to Azure
   subscription_id = var.subscription_id
